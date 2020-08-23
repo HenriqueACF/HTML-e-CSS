@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+}
+p{
+	padding: 10px;
+}
+h3{
+	padding-left: 10px;
+}
+.topo{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background-color: orange;
+	text-align: center;
+}
+.cidade{
+	width: 25%;
+	float: left;
+}
+
+@media only screen and(min-width:500px ) and (max-width:800px; ){
+	.cidade{
+		width: 50%;
+	}
+}
+
+@media only screen and(max-width: 500px){
+	.cidade{
+		width: 100%;
+	}
+}
