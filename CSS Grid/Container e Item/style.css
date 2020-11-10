@@ -1,8 +1,9 @@
 .container {
     display:grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas*/
-    grid-column-gap:10px; /*espaçamento entre colunas */
-    grid-row-gap: 10px; /*espaçamentro entre linhas */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fr = fração*/
+    /*grid-template-rows: 100px 200px 50px;  altura das linhas */
+    /*grid-column-gap:10px; espaçamento entre colunas */
+    /*grid-row-gap: 10px; espaçamentro entre linhas */
     gap:10px 10px; /*espaçamento entre linhas e colunas*/
 }
 .item{
