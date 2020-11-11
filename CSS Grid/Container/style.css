@@ -5,8 +5,8 @@
     /*grid-template-rows: 100px 200px 50px;  altura das linhas */
     /*grid-column-gap:10px; espaçamento entre colunas */
     /*grid-row-gap: 10px; espaçamentro entre linhas */
-    /* grid-auto-rows: minmax(50px, auto);  atribui uma altura para todas as linhas, 
-    utilizando a função minmax ele permite passar o tamanho minino e maximo qiue essa linha pode ter */ 
+    /* grid-auto-rows: minmax(50px, auto);  atribui uma altura para todas as linhas,
+    utilizando a função minmax ele permite passar o tamanho minino e maximo qiue essa linha pode ter */
     gap:10px 10px; /*espaçamento entre linhas e colunas*/
 }
 .item{
@@ -19,6 +19,7 @@
 
 /* MESCLANDO ITENS EM LINHAS */
 .item1{
+    background:#212141;
     /* Mesclando Colunas */
     /* Indica o inicio e o fim da coluna */
     grid-column-start: 1;
@@ -26,6 +27,7 @@
 }
 
 .item3{
+    background: #2aa115;
     /* Começa na coluna 2 e vai ate a 4 */
     grid-column-start:2;
     grid-column-end:4;
@@ -35,11 +37,18 @@
 }
 
 .item8{
+    background:#00FF00;
     /* Começando na coluna 3 e indo ate a 4 */
     grid-column-start: 3;
     grid-column-end: 4;
     /* Começando na linha 5 e terminando na 7 */
     grid-row-start: 5;
     grid-row-end:7;
+}
+
+.item11{
+    background:#bd2a9d;
+    /* Fazendo a mesma ação do Grid Column Start e Grid C olumn End */
+    grid-column: 1/4;
 }
 
