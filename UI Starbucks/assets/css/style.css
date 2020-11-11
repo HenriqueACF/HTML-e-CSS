@@ -70,3 +70,31 @@ header .line{
     width:24px;
     height: 24px;
 }
+
+.banner{
+    background-image: url(../img/bg.jpg);
+    background-position:center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1{
+    font-size:96px;
+    line-height:100px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+}
+
+.banner--images{
+    margin-top: 60px;
+}
+
+.banner--images img{
+    width:148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
