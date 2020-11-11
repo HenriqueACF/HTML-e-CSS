@@ -1,13 +1,19 @@
 .container {
     background:#CCC;
     display:grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas fr = fração, dependendo do tamanho da area do grid*/
+    /*grid-template-columns: repeat(3, 1fr);  3 colunas fr = fração, dependendo do tamanho da area do grid*/
     /*grid-template-rows: 100px 200px 50px;  altura das linhas */
     /*grid-column-gap:10px; espaçamento entre colunas */
     /*grid-row-gap: 10px; espaçamentro entre linhas */
     /* grid-auto-rows: minmax(50px, auto);  atribui uma altura para todas as linhas,
     utilizando a função minmax ele permite passar o tamanho minino e maximo qiue essa linha pode ter */
-    gap:10px 10px; /*espaçamento entre linhas e colunas*/
+    gap:10px; /*espaçamento entre linhas e colunas*/
+
+    grid-template-areas: 
+        "header  header header ads"
+        "menu  menu content content"
+        "footer footer footer footer"
+    ;
 }
 .item{
     background-color: #0000FF;
@@ -30,13 +36,29 @@ A Ordem do Grid Area
     3 - grid-row-end
     4 - grid-column-end
 */
-
+/* 
+METODO 1 DO GRIDAREA = NUMERANDO
 .item1{
     grid-area:1 /1 / 3/ 3;
 }
 .item6{
     grid-area:4/2/6/4;
 }
+ */
 
-
-
+/* METODO 2  GRIDAREA = NOMEANDO */
+header{
+    grid-area: header;
+}
+nav{
+    grid-area:menu;
+}
+section{
+    grid-area: content;
+}
+footer{
+    grid-area:footer;
+}
+.ad{
+    grid-area:ads;
+}
